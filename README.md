@@ -19,7 +19,7 @@ You also need to have a [Bot Framework](http://dev.botframework.com) chatbot reg
 
 Copy your **DirectLine secret** from the portal and paste it to `/app/botConfig.ts` - value `directLineSecret`. Also change the rest of the configuration to suit your needs.
 
-```json
+```typescript
 export const BotConfig = 
 {
     header: {
