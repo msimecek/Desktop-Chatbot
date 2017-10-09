@@ -1,0 +1,23 @@
+{
+  "name": "chatbot",
+  "productName": "Chatbot",
+  "version": "1.0.0",
+  "description": "Chatbot app",
+  "main": "js/main.js",
+  "scripts": {
+    "start": "./node_modules/.bin/electron ."
+  },
+  "repository": "https://github.com/msimecek",
+  "keywords": [],
+  "author": "Martin Simecek",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "~1.6.2",
+    "electron-packager": "^9.1.0",
+    "electron-winstaller": "^2.6.3"
+  },
+  "dependencies": {
+    "fullname": "^3.3.0",
+    "mkdirp": "^0.5.1"
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "outDir": "src/js",
+        "sourceMap": true,
+        "types": [
+            "node"
+        ],
+        "typeRoots": [
+            "src/node_modules/@types"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "electron": ["src/node_modules/electron"],
+            "mkdirp": ["src/node_modules/mkdirp"]
+        }
+    },
+    "compileOnSave": true
+}
