@@ -64,6 +64,4 @@ You will find output in the `/out` folder.
 
 ## Remarks
 
-Localization is coming, UI is currently in Czech.
-
 Icon used by this project was made by [Gregor Cresnar](https://www.flaticon.com/authors/gregor-cresnar) from [https://www.flaticon.com/](www.flaticon.com)
