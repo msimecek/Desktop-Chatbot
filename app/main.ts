@@ -1,5 +1,6 @@
 import { loadSettings, saveSettings, resetSettings } from "./settings";
 import { BotConfig } from "./botConfig";
+import { Strings } from "./strings";
 import * as Electron from "electron";
 import * as path from "path";
 import * as url from "url";
@@ -19,6 +20,7 @@ let mainWindow: Electron.BrowserWindow;
 let settings;
 const settingsFileName: string = "settings.json";
 
+let locale: string;
 let isQuitting: boolean = false;
 
 var isWindowOffScreen = function(windowBounds: Electron.Rectangle): boolean {
@@ -35,7 +37,8 @@ function createWindow () {
   //resetSettings(settingsFileName); //DEBUG
   
   settings = loadSettings(settingsFileName);
-  
+  locale = app.getLocale();
+
   const windowTitle = BotConfig.bot.botName || "Chatbot"
   
   let initPosition: Electron.Rectangle = {
@@ -120,9 +123,9 @@ function createWindow () {
   });
 
   const contextMenu = Electron.Menu.buildFromTemplate([
-    { label: "Otevřít", click: function() { mainWindow.show(); } },
+    { label: Strings(locale).open, click: function() { mainWindow.show(); } },
     { type: "separator" },
-    { label: "Ukončit", click: function() {
+    { label: Strings(locale).quit, click: function() {
       isQuitting = true;
       app.quit();
      } }
