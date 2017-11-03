@@ -76,7 +76,8 @@ function createWindow () {
   }))
 
   // Open the DevTools.
-  //mainWindow.webContents.openDevTools()
+  if (BotConfig.devMode)
+    mainWindow.webContents.openDevTools()
 
   mainWindow.on("ready-to-show", function() {
     mainWindow.show();
