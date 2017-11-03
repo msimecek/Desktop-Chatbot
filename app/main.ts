@@ -23,7 +23,7 @@ const settingsFileName: string = "settings.json";
 let locale: string;
 let isQuitting: boolean = false;
 
-var isWindowOffScreen = function(windowBounds: Electron.Rectangle): boolean {
+const isWindowOffScreen = function(windowBounds: Electron.Rectangle): boolean {
   const nearestDisplay = Electron.screen.getDisplayMatching(windowBounds).workArea;
   return (
       windowBounds.x > (nearestDisplay.x + nearestDisplay.width) ||
@@ -107,7 +107,7 @@ function createWindow () {
   mainWindow.on("move", () => { saveWindowState(); });
 
   function saveWindowState() {
-    var bounds = mainWindow.getBounds();
+    const bounds = mainWindow.getBounds();
 
     settings.windowState.width = bounds.width;
     settings.windowState.height = bounds.height;
