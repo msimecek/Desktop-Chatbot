@@ -15,7 +15,7 @@ This app is built using Electron and TypeScript. To be able to edit and build it
   * can be installed via npm: `npm install -g typescript`
 * to browse and edit the code I recommend [Visual Studio Code](https://code.visualstudio.com/)
 
-You also need to have a [Bot Framework](http://dev.botframework.com) chatbot registered at the portal with DirectLine channel enabled.
+You also need to have a [Bot Framework](http://dev.botframework.com) chatbot registered at the portal with [DirectLine channel enabled](https://docs.microsoft.com/en-us/bot-framework/channel-connect-directline).
 
 Copy your **DirectLine secret** from the portal and paste it to `/app/botConfig.ts` - value `directLineSecret`. Also change the rest of the configuration to suit your needs.
 
