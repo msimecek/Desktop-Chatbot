@@ -2,11 +2,6 @@
 // be executed in the renderer process for that window.
 // All of the Node.js APIs are available in this process.
 
-const fullName = require("fullname");
-var userName;
-fullName().then(name => { userName = name});
-
-
 import { BotConfig } from "./botConfig";
 
 let style = document.createElement("style");
@@ -28,7 +23,7 @@ declare var BotChat:any;
 
 BotChat.App({
     directLine: { secret: BotConfig.bot.directLineSecret },
-    user: { id: BotConfig.bot.userId, name: userName },
+    user: { id: BotConfig.bot.userId, name: BotConfig.bot.userName },
     bot: { id: BotConfig.bot.botId, name: BotConfig.bot.botName },
     resize: 'detect'
   }, document.getElementById("bot"));
