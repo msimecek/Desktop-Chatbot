@@ -11,7 +11,8 @@
             "runtimeExecutable": "${workspaceFolder}/src/node_modules/.bin/electron",
             "program": "${workspaceFolder}/src/js/main.js",
             "cwd": "${workspaceFolder}/src",
-            "protocol": "legacy"
+            "protocol": "legacy",
+            "preLaunchTask": "build-tsc"
         }
     ]
 }
