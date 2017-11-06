@@ -17,6 +17,8 @@ This app is built using Electron and TypeScript. To be able to edit and build it
 
 You also need to have a [Bot Framework](http://dev.botframework.com) chatbot registered at the portal with [DirectLine channel enabled](https://docs.microsoft.com/en-us/bot-framework/channel-connect-directline).
 
+## Configuration
+
 Copy your **DirectLine secret** from the portal and paste it to `/app/botConfig.ts` - value `directLineSecret`. Also change the rest of the configuration to suit your needs.
 
 ```typescript
@@ -49,7 +51,7 @@ Then you can build and start the app:
 4. `tsc -p ../`
 5. `npm start`
 
-## Setup
+## Installer
 
 To build an installer, simply run `/src/js/installer.js` with Node.js:
 
