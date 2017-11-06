@@ -11,7 +11,7 @@ if (BotConfig.header.visible) {
     style.innerHTML = ".wc-header {background-color: " + (BotConfig.header.backgroundColor || "#3a96dd") + "; color: " + (BotConfig.header.textColor || "white") + ";}";
 }
 else {
-    style.innerHTML = ".wc-header {display:none}";
+    style.innerHTML = ".wc-header {display:none} .wc-message-groups { top: auto }";
 }
 
 if (!BotConfig.uploadButton)
