@@ -26,6 +26,7 @@ const installerOptions =
 packager(packagerOptions).then((appPaths) => { 
     console.log("Packaging done!");
     var resultPromise = electronInstaller.createWindowsInstaller(installerOptions);
+    console.log("Creating installer...");
     resultPromise.then(() => console.log("Installer created!"), (e) => console.log("Installer not created: " + e.message));
 });
 
