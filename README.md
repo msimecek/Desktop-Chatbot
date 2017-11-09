@@ -6,6 +6,8 @@ Hosting Bot Framework's web chat control inside an Electron app to enable chatbo
 
 ![](Images/tray-menu.png)
 
+> This project was built in cooperation with a real customer. Read the whole story [on my blog](http://codez.deedx.cz/projects/desktop-chatbot/).
+
 ## How to build it
 
 This app is built using Electron and TypeScript. To be able to edit and build it, you need to install:
